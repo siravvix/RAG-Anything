@@ -102,4 +102,5 @@ ignore_missing_imports = true
 asyncio_mode = "auto"
 testpaths = ["tests"]
 # Removed --cov flags so a quick `pytest` run doesn't require pytest-cov installed
-addopts = "-v"
+# -s shows print() output during tests, useful for debugging locally
+addopts = "-v -s"
