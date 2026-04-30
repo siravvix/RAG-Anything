@@ -104,4 +104,5 @@ testpaths = ["tests"]
 # Removed --cov flags so a quick `pytest` run doesn't require pytest-cov installed
 # -s shows print() output during tests, useful for debugging locally
 # --tb=short keeps tracebacks concise without losing useful context
-addopts = "-v -s --tb=short"
+# --no-header reduces noise in output when running tests frequently during dev
+addopts = "-v -s --tb=short --no-header"
