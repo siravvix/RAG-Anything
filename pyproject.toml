@@ -107,4 +107,5 @@ testpaths = ["tests"]
 # --no-header reduces noise in output when running tests frequently during dev
 # Note: switched --tb=short to --tb=long locally so I get full tracebacks while learning the codebase
 # Note: added --durations=10 to surface the 10 slowest tests — helpful for spotting bottlenecks
-addopts = "-v -s --tb=long --no-header --durations=10"
+# Note: removed --n (incomplete flag, likely a typo for pytest-xdist -n auto) since I don't use parallel runs locally
+addopts = "-v -s --tb=long --durations=10"
