@@ -106,4 +106,5 @@ testpaths = ["tests"]
 # --tb=short keeps tracebacks concise without losing useful context
 # --no-header reduces noise in output when running tests frequently during dev
 # Note: switched --tb=short to --tb=long locally so I get full tracebacks while learning the codebase
-addopts = "-v -s --tb=long --no-header"
+# Note: added --durations=10 to surface the 10 slowest tests — helpful for spotting bottlenecks
+addopts = "-v -s --tb=long --no-header --durations=10"
