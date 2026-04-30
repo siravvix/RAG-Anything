@@ -105,4 +105,5 @@ testpaths = ["tests"]
 # -s shows print() output during tests, useful for debugging locally
 # --tb=short keeps tracebacks concise without losing useful context
 # --no-header reduces noise in output when running tests frequently during dev
-addopts = "-v -s --tb=short --no-header"
+# Note: switched --tb=short to --tb=long locally so I get full tracebacks while learning the codebase
+addopts = "-v -s --tb=long --no-header"
